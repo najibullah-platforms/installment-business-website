@@ -92,6 +92,11 @@ import DawlanceWashFront from "../assets/images/products/washing-machines/Dawlan
 import DawlanceWashBack from "../assets/images/products/washing-machines/Dawlance/back.jpg";
 import DawlanceWashSide from "../assets/images/products/washing-machines/Dawlance/side.webp";
 import DawlanceWashBox from "../assets/images/products/washing-machines/Dawlance/box.jpg";
+// kenwood
+import kenwoodFront from "../assets/images/products/accessories/kenwood/front.png";
+import kenwoodBack from "../assets/images/products/accessories/kenwood/back.jpg";
+import kenwoodSide from "../assets/images/products/accessories/kenwood/side.png";
+import kenwoodBox from "../assets/images/products/accessories/kenwood/box.jpg";
 
 const products = [
   {
@@ -327,6 +332,19 @@ const products = [
     price: 85000,
     downPayment: 18000,
     monthly: 5667,
+    duration: "12 Months",
+  },
+  {
+    id: 19,
+    name: "Kenwood ",
+    brand: "Kenwood",
+    category: "kenwood juicer",
+
+    images: [kenwoodFront, kenwoodBack, kenwoodSide, kenwoodBox],
+
+    price: 35000,
+    downPayment: 8000,
+    monthly: 2250,
     duration: "12 Months",
   },
 ];
