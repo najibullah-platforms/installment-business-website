@@ -33,12 +33,20 @@ function Navbar() {
         </div>
 
         {/* Mobile Button */}
+        
         <button
           className="md:hidden text-2xl"
           onClick={() => setIsOpen(!isOpen)}
+          aria-label={isOpen ? "Close menu" : "Open menu"}
         >
-          {isOpen ? <FaTimes /> : <FaBars />}
+          {isOpen ? (
+            <FaTimes aria-hidden="true" />
+          ) : (
+            <FaBars aria-hidden="true" />
+          )}
         </button>
+        
+
       </div>
 
       {/* Mobile Menu */}

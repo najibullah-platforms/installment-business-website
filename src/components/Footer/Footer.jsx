@@ -54,7 +54,7 @@ function Footer() {
 
           <p className="flex items-center gap-2 mt-3">
             <a href="https://wa.me/923001234567"
-              target="_blank">
+              target="_blank"   rel="noopener noreferrer"  aria-label="Contact us on WhatsApp">
 
               <FaWhatsapp />
             </a>
