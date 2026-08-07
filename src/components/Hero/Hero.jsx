@@ -2,7 +2,7 @@
 
 import { Link } from "react-router-dom";
 import Button from "../Button/Button";
-import heroImage from "../../assets/hero2.jpeg";
+import heroImage from "../../assets/hero2.webp";
 function Hero() {
   return (
     <section className="bg-gray-50 py-16">
@@ -61,7 +61,11 @@ function Hero() {
           <img
             src={heroImage}
             alt="Electronics Shop"
-            className="rounded-xl shadow-lg w-full"
+            width="1200"
+            height="1600"
+            fetchPriority="high"
+            decoding="async"
+            className="rounded-xl shadow-lg w-full h-auto"
           />
         </div>
 
