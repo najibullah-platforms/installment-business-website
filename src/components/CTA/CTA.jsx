@@ -20,6 +20,12 @@ function CTA() {
 
           <a
             href="tel:+923325280260"
+            onClick={() => {
+              gtag("event", "phone_click", {
+                event_category: "Contact",
+                event_label: "CTA Section",
+              });
+            }}
             className="bg-white text-blue-600 px-6 py-3 rounded-lg hover:bg-gray-100"
           >
             Call Now
