@@ -36,7 +36,11 @@ function InstallmentCalculator() {
             onChange={(e) => setDownPayment(e.target.value)}
           />
 
+          <label htmlFor="months">Select duration</label>
+
           <select
+            id="months"
+            name="months"
             className="w-full border p-3 rounded-lg"
             value={months}
             onChange={(e) => setMonths(Number(e.target.value))}
