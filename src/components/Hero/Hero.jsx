@@ -40,9 +40,15 @@ function Hero() {
             </a>
 
             <a
-              href="https://wa.me/+923325280260"
+              href="https://wa.me/923325280260"
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() => {
+                gtag("event", "whatsapp_click", {
+                  event_category: "Contact",
+                  event_label: "Hero Section",
+                });
+              }}
               className="border border-green-500 text-green-600 px-6 py-3 rounded-lg hover:bg-green-500 hover:text-white transition"
             >
               WhatsApp Us
