@@ -18,10 +18,18 @@ function Hero() {
             service.
           </p>
 
-          <div className="mt-8 flex gap-4">
+          <div className="mt-8 flex flex-wrap gap-4">
             <Link to="/products">
-  <Button>View Products</Button>
-</Link>
+              <Button>View Products</Button>
+            </Link>
+
+            <a
+              href="/catalog/Fazal-Electronics-Catalog.pdf"
+              download
+              className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition"
+            >
+              📄 Download Catalog
+            </a>
 
             <a
               href="https://wa.me/+923325280260"
