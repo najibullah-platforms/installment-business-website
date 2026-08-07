@@ -1,3 +1,5 @@
+/* global gtag */
+
 import { Link } from "react-router-dom";
 import Button from "../Button/Button";
 import heroImage from "../../assets/hero2.jpeg";
@@ -26,6 +28,12 @@ function Hero() {
             <a
               href="/catalog/Fazal-Electronics-Catalog.pdf"
               download
+              onClick={() => {
+                gtag("event", "catalog_download", {
+                  event_category: "Catalog",
+                  event_label: "Hero Section",
+                });
+              }}
               className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition"
             >
               📄 Download Catalog
